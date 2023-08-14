@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Details</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BUY TICKETS</h1>
+    </header>
+    <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="ticket.html">Tickets</a></li>
+          <li><a href="details.html">Details</a></li>
+          <li><a href="payment.html">Payment</a></li>
+          <li><a class="active" href="confirmation.html">Confirmation</a></li>
+        </ul>
+      </nav>
+          <div class="container">
+              <h2>Payment details</h2>
+              <form id="paymentForm">
+                  <label for="cardNumber">Card Number <span class="required">*</span></label>
+                  <input type="text" id="cardNumber" required>
+      
+                  <label for="expiryDate">Expiry Date <span class="required">*</span></label>
+                  <input type="text" id="expiryDate" required>
+      
+                  <label for="cvc">CVC / CVV <span class="required">*</span></label>
+                  <input type="text" id="cvc" required>
+      
+                  <label for="nameOnCard">Name on Card <span class="required">*</span></label>
+                  <input type="text" id="nameOnCard" required>
+      
+                  <a href="confirmation.html"><button type="button" id="payButton" >Pay <span id="amount">$${totalPayable}</span></button></a>
+              </form>
+          </div>>
+          <div id="summaryContainer"></div>
+          <script src="script.js"></script>
+      </body>
+      </html>

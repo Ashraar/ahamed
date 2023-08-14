@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Donation Page</title>
+  <meta name="viewspot" content="with=device-width, intial-scale=1.0">
+  <meta charset="UTF-8"><meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="images/studio.png.png">
+   </head>
+  <body>
+        <header>
+        <nav><!--My first donation webpage-->
+            <img id="logo" src="images/studio.png.png" alt="logo">
+       <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="turtle category.html">Turtle Category</a></li>
+            <li><a href="hikkaduwa.html">Hikkaduwa Turtle hatchery</a></li>
+            <li><a href="threats to turtle.html">Threats to Turtle</a></li>
+            <li class = "dropdown"><a href="#"><span>Other Turtle Hatchery</span><i class="bi bi-chevron-down"></i></a>
+              <ul>
+              <li><a href="Kosgoda.html">Kosgoda</a></li>
+              <li><a href="Bentota.html">Bentota</a></li>
+          </ul>
+      </li>
+            <li><a href="purchase.html">Purchase and Donate</a></li>
+        </ul>
+        </nav>
+        </header>
+        <div id="pur">
+  <section class="hero">
+      <h1>Make a Difference Today</h1><br>
+      <p>Your support can change lives. Donate now to help those in need.</p>
+  </section>
+    <div class="abt">
+      <h2>About Us</h2>
+      <p>We are a non-profit organization dedicated to making a positive impact on the community. Through your donations, we are able to provide essential services to those who need it the most.</p><br><br>
+      <h2>Make a Donation</h2>
+      <p>Your contribution will go a long way in helping us continue our important work. Fill out the form below to make a donation:</p></div><br>
+  <h2>Make a Donation</h2><br>
+  <form action="/process-donation" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="amount">Donation Amount:</label>
+    <input type="number" id="amount" name="amount" required><br><br>
+
+    <label for="currency">Currency:</label>
+    <select id="currency" name="currency" required>
+      <option value="LKR">LKR</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="GBP">GBP</option>
+    </select><br><br>
+
+    <label for="cardNumber">Credit Card Number:</label>
+    <input type="text" id="cardNumber" name="cardNumber" required><br><br>
+
+    <label for="expiry">Expiration Date:</label>
+    <input type="text" id="expiry" name="expiry" required><br><br>
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" required><br><br>
+
+    <input type="submit" value="Donate">
+  </form><br><br>
+
+  <h2>Turtle Hatchery Store</h2> 
+      <h2>Welcome To Our Store! Explore Our Wide Range Of Products</h2>
+    <div class="abt">
+      <h2>Our Products</h2><br>
+      <div class="product1">
+        <img src="images/purc.png" alt="Turtle Hatchery">
+        <h3>Turtle Hatchery</h3>
+        <p>Price: Rs.1000</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product1">
+        <img src="images/purc1.png" alt="Turtle Food">
+        <h3>Turtle Food</h3>
+        <p>Price: Rs.1500</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product1">
+        <img src="images/purc2.png" alt="Turtle Accessories">
+        <h3>Turtle Accessories</h3>
+        <p>Price: Rs.4995</p>
+        <button class="btn">Add to Cart</button>
+    </div>
+  </div>
+  </div>
+  <footer class="footer">
+    © CB011733<br> 2023 Sri Turtles
+ </footer>
+</body>
+</html>

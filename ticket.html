@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>BUY TICKETS</h1>
+    </header>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a href="ticket.html">Tickets</a></li>
+        <li><a href="details.html">Details</a></li>
+        <li><a href="payment.html">Payment</a></li>
+        <li><a class="active" href="confirmation.html">Confirmation</a></li>
+      </ul>
+    </nav>
+        <h1>Guests</h1>
+        <div id="ticketbooking">
+            <div class="categories">
+              <label id="label1" for="foreignerAdult">Foreigner Adults (above 15 yrs)</label>
+              <button class="decrementBtn">-</button>
+              <input type="text" id="foreignerAdult" value="0" min="0">
+              <button class="incrementBtn">+</button>
+            </div>
+            <div class="categories">
+              <label id="label1" for="foreignerChild">Foreigner Child (5 - 14 yrs)</label>
+              <button class="decrementBtn">-</button>
+              <input type="text" id="foreignerChild" value="0" min="0">
+              <button class="incrementBtn">+</button>
+            </div>
+
+            <div class="categories">
+                <label id="label1" for="slAdult">SL Adults (above 15 yrs)</label>
+                <button class="decrementBtn">-</button>
+                <input type="text" id="slAdult" value="0" min="0">
+                <button class="incrementBtn">+</button>
+            </div>
+            <div class="categories">
+                <label id="label1" for="slChild">SL Child (5 - 14 yrs)</label>
+                <button class="decrementBtn">-</button>
+                <input type="text" id="slChild" value="0" min="0">
+                <button class="incrementBtn">+</button>
+            </div>
+            
+            <div class="categories">
+                <label id="label1" for="infant">Infant (below 4 yrs)</label>
+                <button class="decrementBtn">-</button>
+                <input type="text" id="infant" value="0" min="0">
+                <button class="incrementBtn">+</button>
+            </div>
+        </div>    
+        <div class="dropdown">
+            <div class="lists">
+              <label>
+                <input type="checkbox" name="timelines" value="1" onchange="handleCheckboxChange(this)"> 07.00 am - 08.00 am
+              </label>
+              <label>
+                <input type="checkbox" name="timelines" value="2" onchange="handleCheckboxChange(this)"> 08.00 am - 09.00 am
+              </label>
+              <label>
+                <input type="checkbox" name="timelines" value="3" onchange="handleCheckboxChange(this)"> 09.00 am - 10.00 am
+              </label>
+              <label>
+                <input type="checkbox" name="timelines" value="4" onchange="handleCheckboxChange(this)"> 10.00 am - 11.00 am (Peak)
+              </label>
+              <label>
+                <input type="checkbox" name="timelines" value="5" onchange="handleCheckboxChange(this)"> 11.00 am - 12.00 pm (Peak)
+              </label>
+              <label>  
+                <input type="checkbox" name="timelines" value="6" onchange="handleCheckboxChange(this)"> 12.00 pm - 01.00 pm (Peak)
+              </label>
+              <label>
+                <input type="checkbox" name="timelines" value="7" onchange="handleCheckboxChange(this)"> 01.00 pm - 02.00 pm
+              </label>
+              <label>
+                <input type="checkbox" name="timelines" value="8" onchange="handleCheckboxChange(this)"> 02.00 pm - 03.00 pm
+              </label>
+              <label>
+                <input type="checkbox" name="timelines" value="9" onchange="handleCheckboxChange(this)"> 03.00 pm - 04.00 pm (Peak)
+              </label>
+              <label>
+                <input type="checkbox" name="timelines" value="10" onchange="handleCheckboxChange(this)"> 04.00 pm - 05.00 pm (Peak)
+              </label>
+              <label>
+                <input type="checkbox" name="timelines" value="11" onchange="handleCheckboxChange(this)"> 05.00 pm - 06.00 pm (Peak)
+              </label>
+            </div>
+          </div>
+
+          <div id="summarytbl"></div>
+          <button id="myButton">Continue With Purchase</button>
+          
+    <script src="script.js"></script>
+</body>
+
+</html>

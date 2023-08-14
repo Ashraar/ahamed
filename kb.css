@@ -1,0 +1,149 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+    margin: 0;
+    padding: 0; 
+}
+
+
+#logo{
+    height: 60px;
+    width: auto;
+    padding-top: 10px;
+    padding-left: 15px;
+    border-radius: 10px;
+}
+
+    
+
+#navbar{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.747);
+    display: flex;
+    width: 100%;
+    height: 80px;
+    
+    }
+    
+    #navbar ul{
+        margin-left:auto;
+        margin-top: 10px;
+    }
+    
+    #navbar ul li{
+    display:inline-block;
+    padding: 20px 25px;
+    
+    }
+    
+    
+    #navbar ul li a{
+        color: rgb(255, 248, 248);
+        text-decoration: none;
+        font-size: 15px;
+        margin-left: 0%;
+        position: relative;
+    
+    }
+
+#mkg{
+    padding-top: 80px;
+    width: 100%;
+    height: 70vh;
+}
+
+#kg3{
+    width: 100%;
+    height: auto;
+}
+
+.ce, .rh{
+    display: flex;
+}
+
+.ce1, .ce2, .rh1, .rh2, .rt{
+    display: grid;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: black;
+    background-size: cover;
+    width: 800px;
+    height: 400px;  
+}
+
+
+.ce1{
+    background-image: url(images/kg.png);   
+}
+
+.ce2{
+    background-image: url(images/kg4.png);
+}
+
+.rh1{
+    background-image: url(images/kg5.png);
+}
+
+.rh2{
+    background-image: url(images/kg2.png);
+}
+
+.rt{
+    background-image: url(images/kg1.png);
+    margin-left: 25%;  
+}
+
+.kmain1{
+    text-align: center;
+    font-size: 30px;
+
+}
+
+
+.kmain{
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    -webkit-text-stroke: 0.3vw rgba(12, 226, 215, 0.644);
+    text-transform: uppercase;
+    color: black;
+    
+}
+
+.kmain::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    height: 100%;
+    border-right: 3px solid #000000;
+    overflow: hidden;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+
+{
+    width: 100%;
+}
+}
+
+.footer{
+    background-color:rgba(0, 0, 0, 0.747); 
+    width: 100%;
+    height: 100px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+  
+  
